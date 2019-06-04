@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my_log',
+        'NAME': 'mylog',
         'USER': 'root',
         'PASSWORD': '000000',
         'HOST': 'localhost',
