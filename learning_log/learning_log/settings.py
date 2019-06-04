@@ -25,7 +25,7 @@ SECRET_KEY = '^8t7z_f_m-2m79m=a+%kn9@_5fd!9u03*ss%b_n(36xb3d&yq!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '*' ]
 
 
 # Application definition
@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'learning_log',
+        'USER': 'root',
+        'PASSWORD': '000000',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
